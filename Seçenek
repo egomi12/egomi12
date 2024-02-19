@@ -1,0 +1,30 @@
+#include <iostream>
+
+int main() {
+    // Kullanıcıdan bir işlem seçmesini isteyen kod
+
+    int islem;
+
+    std::cout << "Bir işlem seçiniz (1: Toplama, 2: Çıkarma): ";
+    std::cin >> islem;
+
+    // Seçenekler
+    switch (islem) {
+        case 1:
+            int sayi1, sayi2;
+            std::cout << "İki sayı giriniz: ";
+            std::cin >> sayi1 >> sayi2;
+            std::cout << sayi1 << " + " << sayi2 << " = " << sayi1 + sayi2 << std::endl;
+            break;
+        case 2:
+            int sayi3, sayi4;
+            std::cout << "İki sayı giriniz: ";
+            std::cin >> sayi3 >> sayi4;
+            std::cout << sayi3 << " - " << sayi4 << " = " << sayi3 - sayi4 << std::endl;
+            break;
+        default:
+            std::cout << "Geçersiz bir işlem seçtiniz." << std::endl;
+    }
+
+    return 0;
+}
